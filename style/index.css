@@ -1,1 +1,105 @@
-/* Add CSS styling here */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+  /* border: 2px solid teal; */
+}
+head {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.5rem;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+
+}
+nav a{
+      text-decoration: none;
+  border: 2px solid black;
+}
+h2 {
+  text-align: center;
+}
+
+.heading p {
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+
+.maini {
+  height: 30rem;
+}
+.maini img {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+}
+.actimg {
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+ 
+}
+.descr {
+  display: flex;
+  width: 20%;
+  justify-content: center;
+}
+.footer{
+padding: 2rem 0;
+background-color: cadetblue;
+}
+@media(max-width:800px){
+nav{
+ 
+  flex-direction: column;
+  align-items: center;
+  
+}
+nav a{
+  text-align: center;
+}
+.b1, .b2{
+width:45%;
+ justify-content: center;
+}
+.b3, .b4{
+  width: 45%;
+  justify-content: center;
+}
+.maini{
+  display: flex;
+}
+.maini img{
+  width:90%;
+  margin:0 auto;
+}
+.actimg{
+  flex-flow: row wrap;
+ justify-content: center;
+ margin:2rem auto;
+ width:80%;
+}
+.actimg img{
+  width:45%;
+  justify-content: center;
+  margin: 1rem auto;
+}
+.descr{
+  text-align: center;
+}
+}
+@media(max-width:500px){
+.descr{
+  width: 50%;
+}
+}
